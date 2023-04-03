@@ -56,7 +56,6 @@ class HelloLambdaStack(Stack):
             certificate=hello_lambda_certificate,
             security_policy=SecurityPolicy.TLS_1_2,
             endpoint_type=EndpointType.REGIONAL,
-            mapping=None
         )
 
         hello_lambda_api.root.add_method("GET", api_key_required=True)
