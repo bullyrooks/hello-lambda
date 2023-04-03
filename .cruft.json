@@ -1,0 +1,18 @@
+{
+  "template": "https://github.com/bullyrooks/python-lambda-template",
+  "commit": "7bc1d3284235c3ab5660e70bd2ec05543386c092",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "lambda_name": "Test Service One",
+      "application_name": "TestServiceOne",
+      "lambda_slug": "test-service-one",
+      "safe_name": "test_service_one",
+      "service_registry": "test-service-one",
+      "githuborg": "bullyrooks",
+      "workflow_token": "GH_TOKEN",
+      "_template": "https://github.com/bullyrooks/python-lambda-template"
+    }
+  },
+  "directory": null
+}

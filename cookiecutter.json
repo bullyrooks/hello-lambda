@@ -1,0 +1,9 @@
+{
+  "lambda_name": "Hello Lambda",
+  "application_name": "{{ cookiecutter.lambda_name|replace('-', ' ')|replace(' ', '')|replace('.', '')|trim() }}",
+  "lambda_slug": "{{ cookiecutter.lambda_name.lower()|replace('-', ' ')|replace(' ', '-')|replace('.', '-')|trim() }}",
+  "safe_name": "{{ cookiecutter.lambda_slug.replace('-','_') }}",
+  "service_registry": "{{ cookiecutter.lambda_slug }}",
+  "githuborg": "bullyrooks",
+  "workflow_token": "GH_TOKEN"
+}
