@@ -29,9 +29,8 @@ class HelloLambdaStack(Stack):
         )
         hello_lambda_domain_name = "helloworld-lambda.bullyrooks.com"
         # Create a certificate for the domain name
-        hello_lambda_certificate = acm.Certificate(self, "hellworld-lambda_certificate",
-                                                   domain_name=hello_lambda_domain_name,
-                                                   validation=acm.CertificateValidation.from_dns(self))
+        hello_lambda_certificate = acm.Certificate.from_certificate_arn(
+            self, "hello-lambda_certificate", certificate_arn="arn:aws:acm:us-west-2:108452827623:certificate/b9f3f882-162d-4a51-aaf8-07418f33bac6")
 
         hello_lambda_lambda = _lambda.DockerImageFunction(
             scope=self,
